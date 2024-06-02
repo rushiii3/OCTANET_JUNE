@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    align-items: center
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between
+}
+.footerLink{
+    margin-bottom: 0.5rem;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #main {
+        padding-inline: 1.5rem;
+    }
+
+    .navbar {
+        height: auto;
+        width: 100%;
+        padding-inline: 1rem;
+    }
+
+    .video {
+        width: 100%;
+        height: 40rem;
+        object-fit: cover;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .searchicon {
+        display: block;
+    }
+
+    .searchBar {
+        display: none;
+    }
+
+    .info {
+        margin-block: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .heading {
+        font-weight: 500;
+        font-size: 1rem
+    }
+
+    .mainheading {
+        font-weight: bold;
+        font-size: 2.1rem;
+        text-transform: uppercase
+    }
+
+    .subheading {
+        font-weight: 500;
+        font-size: 0.8rem
+    }
+
+    .button {
+        background-color: black;
+        color: white;
+        padding-inline: 1rem;
+        padding-block: 0.5rem;
+        border-radius: 50px;
+        border: 0px;
+        font-size: 1rem;
+    }
+
+    .card {
+        height: 25rem;
+        width: 18rem;
+        position: relative;
+    }
+
+    #dontMissBig {
+        display: none;
+    }
+
+    #dontMissSmall {
+        display: block;
+    }
+
+    .ShopGrid {
+        display: grid;
+        row-gap: 0.5rem;
+        grid-auto-flow: row;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-block: 2rem;
+    }
+
+    .card2 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card2img {
+        width: 7rem;
+        height: 7rem;
+        object-fit: cover;
+        border-radius: 0.5rem;
+    }
+    .footerContent{
+        display: grid; 
+        grid-auto-flow: row; 
+        row-gap: 2rem
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #main {
+        padding-inline: 1.5rem;
+    }
+
+    .navbar {
+        height: auto;
+        width: 100%;
+        padding-inline: 1rem;
+    }
+
+    .video {
+        width: 100%;
+        height: 40rem;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: cover;
+        background-attachment: fixed;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .searchicon {
+        display: block;
+    }
+
+    .searchBar {
+        display: none;
+    }
+
+    .info {
+        margin-block: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .heading {
+        font-weight: 500;
+        font-size: 1.2rem
+    }
+
+    .mainheading {
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-transform: uppercase
+    }
+
+    .subheading {
+        font-weight: 500;
+        font-size: 0.8rem
+    }
+
+    .button {
+        background-color: black;
+        color: white;
+        padding-inline: 1rem;
+        padding-block: 0.5rem;
+        border-radius: 50px;
+        border: 0px;
+        font-size: 1rem;
+    }
+
+    .card {
+        height: 25rem;
+        width: 20rem;
+        position: relative;
+    }
+
+    #dontMissBig {
+        display: none;
+    }
+
+    #dontMissSmall {
+        display: block;
+    }
+
+    .ShopGrid {
+        display: grid;
+        column-gap: 0.5rem;
+        grid-auto-flow: column;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-block: 2rem;
+    }
+
+    .card2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card2img {
+        width: 33rem;
+    }
+
+    .footerContent{
+        display: grid; 
+        grid-auto-flow: row; 
+        row-gap: 2rem
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #main {
+        padding-inline: 2rem;
+    }
+
+    .navbar {
+        height: auto;
+        width: 100%;
+        padding-inline: 1rem;
+    }
+
+    .video {
+        width: 100%;
+        height: 45rem;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: cover;
+        background-attachment: fixed;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .navLink {
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .searchicon {
+        display: block;
+    }
+
+    .searchBar {
+        display: none;
+    }
+
+    .info {
+        margin-block: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heading {
+        font-weight: 500;
+        font-size: 1.2rem
+    }
+
+    .mainheading {
+        font-weight: bold;
+        font-size: 4rem;
+        text-transform: uppercase
+    }
+
+    .subheading {
+        font-weight: 500;
+        font-size: 1rem
+    }
+
+    .button {
+        background-color: black;
+        color: white;
+        padding-inline: 1rem;
+        padding-block: 0.5rem;
+        border-radius: 50px;
+        border: 0px;
+        font-size: 1.1rem;
+    }
+
+    .card {
+        height: 40rem;
+        width: 33rem;
+        position: relative;
+    }
+
+    #dontMissBig {
+        display: block;
+    }
+
+    #dontMissSmall {
+        display: none;
+    }
+
+    .ShopGrid {
+        display: grid;
+        column-gap: 0.5rem;
+        grid-auto-flow: column;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-block: 2rem;
+    }
+
+    .card2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .card2img {
+        width: 33rem;
+    }
+    .footerContent{
+        display: grid; 
+        grid-auto-flow: column; 
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #main {
+        padding-inline: 2rem;
+    }
+
+    .navbar {
+        height: auto;
+        width: 100%;
+        padding-inline: 3rem;
+    }
+
+    .video {
+        width: 100%;
+        height: 45rem;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: cover;
+        background-attachment: fixed;
+    }
+
+    .nav {
+        text-decoration: none;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .navLink {
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .searchicon {
+        display: none;
+    }
+
+    .searchBar {
+        display: block;
+    }
+
+    .info {
+        margin-block: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heading {
+        font-weight: 500;
+        font-size: 1.2rem
+    }
+
+    .mainheading {
+        font-weight: bold;
+        font-size: 4rem;
+        text-transform: uppercase
+    }
+
+    .subheading {
+        font-weight: 500;
+        font-size: 1rem
+    }
+
+    .button {
+        background-color: black;
+        color: white;
+        padding-inline: 1rem;
+        padding-block: 0.5rem;
+        border-radius: 50px;
+        border: 0px;
+        font-size: 1.1rem;
+    }
+
+    .card {
+        height: 40rem;
+        width: 33rem;
+        position: relative;
+    }
+
+    #dontMissBig {
+        display: block;
+    }
+
+    #dontMissSmall {
+        display: none;
+    }
+
+    .ShopGrid {
+        display: grid;
+        column-gap: 0.5rem;
+        grid-auto-flow: column;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-block: 2rem;
+    }
+
+    .card2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .card2img {
+        width: 33rem;
+    }
+    .footerContent{
+        display: grid; 
+        grid-auto-flow: column; 
+    }
+}
+
+.animateUp{
+    animation-name: slideup;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+@keyframes slideup {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: -150px;
+    }
+}
+
+.animateDown{
+    animation-name: slideDown;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+@keyframes slideDown {
+    0%{
+        top: -150px;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+.nav_open {  
+    height: 100vh;
+    overflow: hidden !important;
+    padding-bottom: 50px; /* make this a much larger value */
+    }

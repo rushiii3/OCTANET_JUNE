@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body style="position: relative" class="">
+    <div class="navbar" id="header">
+      <!-- logo -->
+      <svg
+        aria-hidden="true"
+        class="swoosh-svg"
+        focusable="false"
+        viewBox="0 0 24 24"
+        role="img"
+        width="80px"
+        height="80px"
+        fill="none"
+      >
+        <path
+          fill="currentColor"
+          fill-rule="evenodd"
+          d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+      <!-- navbars -->
+      <ul class="nav">
+        <li class="navLink">New & Featured</li>
+        <li class="navLink">Men</li>
+        <li class="navLink">Women</li>
+        <li class="navLink">Kids</li>
+        <li class="navLink">Sale</li>
+        <li class="navLink">Customise</li>
+        <li class="navLink">SNKRS</li>
+      </ul>
+
+      <div
+        style="
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 1rem;
+        "
+      >
+        <!-- search bar -->
+        <div
+          style="margin-right: 0rem; position: relative; align-items: center"
+          class="searchBar"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            style="
+              height: 1.5rem;
+              width: 1.5rem;
+              position: absolute;
+              top: 20%;
+              left: 2%;
+            "
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+            />
+          </svg>
+
+          <input
+            type="search"
+            name=""
+            id=""
+            placeholder="Search"
+            style="
+              width: 10rem;
+              font-size: 1rem;
+              border: 0px;
+              background-color: lightgray;
+              padding-block: 0.5rem;
+              border-radius: 1.5rem;
+              padding-left: 2rem;
+            "
+          />
+        </div>
+        <!-- search icon -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          style="height: 1.5rem; width: 1.5rem"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6 searchicon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+          />
+        </svg>
+        <!-- heart icon -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          style="height: 1.5rem; width: 1.5rem"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+          />
+        </svg>
+        <!-- bag icon -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          style="height: 1.5rem; width: 1.5rem"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+          />
+        </svg>
+        <!-- hamburger icon -->
+        <button type="button" style="background-color: white;border: 0px;pointer-events: all;" id="openNav">
+            <svg
+          xmlns="http://www.w3.org/2000/svg"
+          style="height: 1.5rem; width: 1.5rem"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6 hamburger"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+        </button>
+        
+      </div>
+    </div>
+    <div
+      style="
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 10;
+        top: 0px;
+        display: none;
+      "
+      id="smallNavbar"
+    >
+      <div
+        style="
+          background-color: white;
+          width: 70%;
+          height: 100%;
+          position: fixed;
+          right: 0;
+        "
+      >
+        <div style="margin-top: 2rem;display: flex;justify-content: end;margin-right: 1rem;">
+            <button type="button" style="background-color: white;border: 0px;pointer-events: all;" id="closeNav">
+                <svg
+            style="height: 2rem; width: 2rem"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+            </button>
+            
+        </div>
+        <div style="padding-inline: 2rem;margin-top: 2rem;">
+            <ul style="list-style-type: none;">
+                <li style="font-size: 1.7rem;margin-bottom: 1rem;display: flex;flex-direction: row;align-items: center;justify-content: space-between;">New & Featured <svg style="height: 1.5rem; width: 1.5rem" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg>
+                </li>
+                <li style="font-size: 1.7rem;margin-bottom: 1rem;display: flex;flex-direction: row;align-items: center;justify-content: space-between;">Men <svg style="height: 1.5rem; width: 1.5rem" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg>
+                </li>
+                <li style="font-size: 1.7rem;margin-bottom: 1rem;display: flex;flex-direction: row;align-items: center;justify-content: space-between;">Women <svg style="height: 1.5rem; width: 1.5rem" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg>
+                </li>
+                <li style="font-size: 1.7rem;margin-bottom: 1rem;display: flex;flex-direction: row;align-items: center;justify-content: space-between;">Kids <svg style="height: 1.5rem; width: 1.5rem" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg>
+                </li>
+                <li style="font-size: 1.7rem;margin-bottom: 1rem;display: flex;flex-direction: row;align-items: center;justify-content: space-between;">Sale <svg style="height: 1.5rem; width: 1.5rem" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg>
+                </li>
+                <li style="font-size: 1.7rem;margin-bottom: 1rem;">Customise</li>
+                <li style="font-size: 1.7rem;margin-bottom: 1rem;">SNKRS</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div id="main" >
+      <div class="hero">
+        <video
+          src="./assests/intro.mp4"
+          autoplay
+          muted
+          loop
+          class="video"
+        ></video>
+      </div>
+      <div class="info">
+        <p class="heading">Lifestyle Running Shoes</p>
+        <p class="mainheading">Extra-Ordinary</p>
+        <p class="subheading">
+          Meet the latest collection of retro running inspired shoes. The
+          unlikely heroes of your easiest styling hack.
+        </p>
+        <div style="margin-top: 1rem">
+          <button type="button" class="button">Buy It</button>
+          <button type="button" class="button">Style It</button>
+        </div>
+      </div>
+      <div class="feature" style="margin-block: 4rem">
+        <p style="font-size: 2rem">Featured</p>
+        <div
+          style="
+            display: grid;
+            column-gap: 0.5rem;
+            grid-template-columns: auto auto auto;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            padding-block: 2rem;
+          "
+        >
+          <div class="card">
+            <img
+              src="./assests/feature1.png"
+              alt=""
+              style="height: 100%; width: 100%"
+            />
+            <div style="position: absolute; bottom: 3rem; left: 3rem">
+              <p style="font-size: 1.2rem; margin-bottom: 0.5rem; color: white">
+                Jordan Basketball
+              </p>
+              <p style="font-size: 1.5rem; margin-bottom: 0.5rem; color: white">
+                Tatum 2 'Denim'
+              </p>
+              <button
+                type="button"
+                class="button"
+                style="background-color: white; color: black; font-weight: 500"
+              >
+                Shop
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./assests/feature2.png"
+              alt=""
+              style="height: 100%; width: 100%"
+            />
+            <div style="position: absolute; bottom: 3rem; left: 3rem">
+              <p style="font-size: 1.2rem; margin-bottom: 0.5rem; color: white">
+                Jordan Basketball
+              </p>
+              <p style="font-size: 1.5rem; margin-bottom: 0.5rem; color: white">
+                Tatum 2 'Denim'
+              </p>
+              <button
+                type="button"
+                class="button"
+                style="background-color: white; color: black; font-weight: 500"
+              >
+                Shop
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./assests/feature3.png"
+              alt=""
+              style="height: 100%; width: 100%"
+            />
+            <div style="position: absolute; bottom: 3rem; left: 3rem">
+              <p style="font-size: 1.5rem; margin-bottom: 0.5rem; color: black">
+                Ace the Court
+              </p>
+              <button type="button" class="button" style="font-weight: 500">
+                Shop
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popular">
+        <p style="font-size: 2rem">Popular Right Now</p>
+        <div
+          style="
+            display: grid;
+            column-gap: 0.5rem;
+            grid-auto-flow: column;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            padding-block: 2rem;
+          "
+        >
+          <div>
+            <img
+              src="./assests/shoes/air-force-1-07-easyon-shoes-lpjTWM.png"
+              alt=""
+              class="card"
+            />
+            <div style="margin-top: 0.5rem">
+              <p
+                style="
+                  font-size: 1.2rem;
+                  margin-bottom: 0.2rem;
+                  color: black;
+                  font-weight: 600;
+                "
+              >
+                Nike Air Force 1 '07 Fresh
+              </p>
+              <p
+                style="font-size: 1rem; margin-bottom: 0.5rem; color: darkgrey"
+              >
+                Men's Shoes
+              </p>
+              <p style="font-size: 1.2rem; color: black; font-weight: 600">
+                MRP: ₹11,295
+              </p>
+            </div>
+          </div>
+          <div>
+            <img
+              src="./assests/shoes/air-force-1-07-fresh-shoes-bBRnbq.png"
+              alt=""
+              class="card"
+            />
+            <div style="margin-top: 0.5rem">
+              <p
+                style="
+                  font-size: 1.2rem;
+                  margin-bottom: 0.2rem;
+                  color: black;
+                  font-weight: 600;
+                "
+              >
+                Nike Air Force 1 '07 Fresh
+              </p>
+              <p
+                style="font-size: 1rem; margin-bottom: 0.5rem; color: darkgrey"
+              >
+                Men's Shoes
+              </p>
+              <p style="font-size: 1.2rem; color: black; font-weight: 600">
+                MRP: ₹11,295
+              </p>
+            </div>
+          </div>
+          <div>
+            <img
+              src="./assests/shoes/air-jordan-1-low-shoes-459b4T.png"
+              alt=""
+              class="card"
+            />
+            <div style="margin-top: 0.5rem">
+              <p
+                style="
+                  font-size: 1.2rem;
+                  margin-bottom: 0.2rem;
+                  color: black;
+                  font-weight: 600;
+                "
+              >
+                Nike Air Force 1 '07 Fresh
+              </p>
+              <p
+                style="font-size: 1rem; margin-bottom: 0.5rem; color: darkgrey"
+              >
+                Men's Shoes
+              </p>
+              <p style="font-size: 1.2rem; color: black; font-weight: 600">
+                MRP: ₹11,295
+              </p>
+            </div>
+          </div>
+          <div>
+            <img
+              src="./assests/shoes/air-max-90-shoes-K0mczj.png"
+              alt=""
+              class="card"
+            />
+            <div style="margin-top: 0.5rem">
+              <p
+                style="
+                  font-size: 1.2rem;
+                  margin-bottom: 0.2rem;
+                  color: black;
+                  font-weight: 600;
+                "
+              >
+                Nike Air Force 1 '07 Fresh
+              </p>
+              <p
+                style="font-size: 1rem; margin-bottom: 0.5rem; color: darkgrey"
+              >
+                Men's Shoes
+              </p>
+              <p style="font-size: 1.2rem; color: black; font-weight: 600">
+                MRP: ₹11,295
+              </p>
+            </div>
+          </div>
+          <div>
+            <img
+              src="./assests/shoes/dunk-low-retro-shoe-66RGqF.png"
+              alt=""
+              class="card"
+            />
+            <div style="margin-top: 0.5rem">
+              <p
+                style="
+                  font-size: 1.2rem;
+                  margin-bottom: 0.2rem;
+                  color: black;
+                  font-weight: 600;
+                "
+              >
+                Nike Air Force 1 '07 Fresh
+              </p>
+              <p
+                style="font-size: 1rem; margin-bottom: 0.5rem; color: darkgrey"
+              >
+                Men's Shoes
+              </p>
+              <p style="font-size: 1.2rem; color: black; font-weight: 600">
+                MRP: ₹11,295
+              </p>
+            </div>
+          </div>
+          <div>
+            <img
+              src="./assests/shoes/dunk-low-shoes-r8QXCd.png"
+              alt=""
+              class="card"
+            />
+            <div style="margin-top: 0.5rem">
+              <p
+                style="
+                  font-size: 1.2rem;
+                  margin-bottom: 0.2rem;
+                  color: black;
+                  font-weight: 600;
+                "
+              >
+                Nike Air Force 1 '07 Fresh
+              </p>
+              <p
+                style="font-size: 1rem; margin-bottom: 0.5rem; color: darkgrey"
+              >
+                Men's Shoes
+              </p>
+              <p style="font-size: 1.2rem; color: black; font-weight: 600">
+                MRP: ₹11,295
+              </p>
+            </div>
+          </div>
+          <div>
+            <img
+              src="./assests/shoes/dunk-low-shoes-wbxcmN.png"
+              alt=""
+              class="card"
+            />
+            <div style="margin-top: 0.5rem">
+              <p
+                style="
+                  font-size: 1.2rem;
+                  margin-bottom: 0.2rem;
+                  color: black;
+                  font-weight: 600;
+                "
+              >
+                Nike Air Force 1 '07 Fresh
+              </p>
+              <p
+                style="font-size: 1rem; margin-bottom: 0.5rem; color: darkgrey"
+              >
+                Men's Shoes
+              </p>
+              <p style="font-size: 1.2rem; color: black; font-weight: 600">
+                MRP: ₹11,295
+              </p>
+            </div>
+          </div>
+          <div>
+            <img
+              src="./assests/shoes/gamma-force-shoes-CbTnH1.png"
+              alt=""
+              class="card"
+            />
+            <div style="margin-top: 0.5rem">
+              <p
+                style="
+                  font-size: 1.2rem;
+                  margin-bottom: 0.2rem;
+                  color: black;
+                  font-weight: 600;
+                "
+              >
+                Nike Air Force 1 '07 Fresh
+              </p>
+              <p
+                style="font-size: 1rem; margin-bottom: 0.5rem; color: darkgrey"
+              >
+                Men's Shoes
+              </p>
+              <p style="font-size: 1.2rem; color: black; font-weight: 600">
+                MRP: ₹11,295
+              </p>
+            </div>
+          </div>
+          <div>
+            <img
+              src="./assests/shoes/nikecourt-dri-fit-tennis-t-shirt-cz39ww.png"
+              alt=""
+              class="card"
+              style="object-fit: cover"
+            />
+            <div style="margin-top: 0.5rem">
+              <p
+                style="
+                  font-size: 1.2rem;
+                  margin-bottom: 0.2rem;
+                  color: black;
+                  font-weight: 600;
+                "
+              >
+                Nike Air Force 1 '07 Fresh
+              </p>
+              <p
+                style="font-size: 1rem; margin-bottom: 0.5rem; color: darkgrey"
+              >
+                Men's Shoes
+              </p>
+              <p style="font-size: 1.2rem; color: black; font-weight: 600">
+                MRP: ₹11,295
+              </p>
+            </div>
+          </div>
+          <div>
+            <img
+              src="./assests/shoes/tatum-2-vortex-pf-basketball-shoes-WWbXXK.png"
+              alt=""
+              class="card"
+            />
+            <div style="margin-top: 0.5rem">
+              <p
+                style="
+                  font-size: 1.2rem;
+                  margin-bottom: 0.2rem;
+                  color: black;
+                  font-weight: 600;
+                "
+              >
+                Nike Air Force 1 '07 Fresh
+              </p>
+              <p
+                style="font-size: 1rem; margin-bottom: 0.5rem; color: darkgrey"
+              >
+                Men's Shoes
+              </p>
+              <p style="font-size: 1.2rem; color: black; font-weight: 600">
+                MRP: ₹11,295
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dontMiss" style="margin-block: 4rem">
+        <p style="font-size: 2rem; margin-bottom: 2rem">Don't miss</p>
+        <img
+          src="./assests/BigDeviceDontmIss.jpg"
+          alt=""
+          style="height: 100%; width: 100%"
+          id="dontMissBig"
+        />
+        <img
+          src="./assests/smallDeviceDontmIss.jpg"
+          alt=""
+          style="height: 100%; width: 100%"
+          id="dontMissSmall"
+        />
+      </div>
+      <div class="info">
+        <p class="heading">Jordan Women</p>
+        <p class="mainheading">AIR JORDAN DENIM</p>
+        <p class="subheading">
+          Do your thing in denim. Indigo is in this summer with modern
+          silhouettes like shirts and shorts infused with classic Jordan DNA.
+        </p>
+        <div style="margin-top: 1rem">
+          <button type="button" class="button">Shop</button>
+        </div>
+      </div>
+      <div class="classicSpotlight" style="margin-block: 4rem">
+        <p style="font-size: 2rem">Classics Spotlight</p>
+        <div
+          style="
+            display: grid;
+            column-gap: 0.5rem;
+            grid-auto-flow: column;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            padding-block: 2rem;
+          "
+        >
+          <div>
+            <img src="./assests/shoe1.jpg" alt="" class="card" />
+          </div>
+          <div>
+            <img src="./assests/shoe2.jpg" alt="" class="card" />
+          </div>
+          <div>
+            <img src="./assests/shoe3.jpg" alt="" class="card" />
+          </div>
+          <div>
+            <img src="./assests/shoe4.jpg" alt="" class="card" />
+          </div>
+        </div>
+      </div>
+      <div class="shopBySport" style="margin-block: 4rem">
+        <p style="font-size: 2rem">Shop by Sport</p>
+        <div class="ShopGrid">
+          <div class="card2">
+            <img src="./assests/nikeBasketBall.jpeg" alt="" class="card2img" />
+            <div style="margin-top: 0.5rem">
+              <p
+                style="
+                  font-size: 1.2rem;
+                  margin-bottom: 0.2rem;
+                  color: black;
+                  font-weight: 600;
+                "
+              >
+                Nike Air Force 1 '07 Fresh
+              </p>
+              <p
+                style="font-size: 1rem; margin-bottom: 0.5rem; color: darkgrey"
+              >
+                Men's Shoes
+              </p>
+              <p
+                style="
+                  font-size: 1.2rem;
+                  color: black;
+                  font-weight: 500;
+                  text-decoration: underline;
+                "
+              >
+                Shop
+              </p>
+            </div>
+          </div>
+          <div class="card2">
+            <img src="./assests/nikeGolf.jpeg" alt="" class="card2img" />
+            <div style="margin-top: 0.5rem">
+              <p
+                style="
+                  font-size: 1.2rem;
+                  margin-bottom: 0.2rem;
+                  color: black;
+                  font-weight: 600;
+                "
+              >
+                Nike Air Force 1 '07 Fresh
+              </p>
+              <p
+                style="font-size: 1rem; margin-bottom: 0.5rem; color: darkgrey"
+              >
+                Men's Shoes
+              </p>
+              <p
+                style="
+                  font-size: 1.2rem;
+                  color: black;
+                  font-weight: 500;
+                  text-decoration: underline;
+                "
+              >
+                Shop
+              </p>
+            </div>
+          </div>
+          <div class="card2">
+            <img src="./assests/nikeTennis.jpeg" alt="" class="card2img" />
+            <div style="margin-top: 0.5rem">
+              <p
+                style="
+                  font-size: 1.2rem;
+                  margin-bottom: 0.2rem;
+                  color: black;
+                  font-weight: 600;
+                "
+              >
+                Nike Air Force 1 '07 Fresh
+              </p>
+              <p
+                style="font-size: 1rem; margin-bottom: 0.5rem; color: darkgrey"
+              >
+                Men's Shoes
+              </p>
+              <p
+                style="
+                  font-size: 1.2rem;
+                  color: black;
+                  font-weight: 500;
+                  text-decoration: underline;
+                "
+              >
+                Shop
+              </p>
+            </div>
+          </div>
+          <div class="card2">
+            <img src="./assests/nikeTrail.jpeg" alt="" class="card2img" />
+            <div style="margin-top: 0.5rem">
+              <p
+                style="
+                  font-size: 1.2rem;
+                  margin-bottom: 0.2rem;
+                  color: black;
+                  font-weight: 600;
+                "
+              >
+                Nike Air Force 1 '07 Fresh
+              </p>
+              <p
+                style="font-size: 1rem; margin-bottom: 0.5rem; color: darkgrey"
+              >
+                Men's Shoes
+              </p>
+              <p
+                style="
+                  font-size: 1.2rem;
+                  color: black;
+                  font-weight: 500;
+                  text-decoration: underline;
+                "
+              >
+                Shop
+              </p>
+            </div>
+          </div>
+          <div class="card2">
+            <img src="./assests/nikeFootball.jpeg" alt="" class="card2img" />
+            <div style="margin-top: 0.5rem">
+              <p
+                style="
+                  font-size: 1.2rem;
+                  margin-bottom: 0.2rem;
+                  color: black;
+                  font-weight: 600;
+                "
+              >
+                Nike Air Force 1 '07 Fresh
+              </p>
+              <p
+                style="font-size: 1rem; margin-bottom: 0.5rem; color: darkgrey"
+              >
+                Men's Shoes
+              </p>
+              <p
+                style="
+                  font-size: 1.2rem;
+                  color: black;
+                  font-weight: 500;
+                  text-decoration: underline;
+                "
+              >
+                Shop
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="memberBenefits" style="margin-block: 4rem">
+        <p style="font-size: 2rem">Featured</p>
+        <div
+          style="
+            display: grid;
+            column-gap: 0.5rem;
+            grid-auto-flow: column;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            padding-block: 2rem;
+          "
+        >
+          <div class="card">
+            <img
+              src="./assests/benefit1.jpeg"
+              alt=""
+              style="height: 100%; width: 100%"
+            />
+            <div style="position: absolute; bottom: 3rem; left: 3rem">
+              <p style="font-size: 1.2rem; margin-bottom: 0.5rem; color: white">
+                Jordan Basketball
+              </p>
+              <p style="font-size: 1.5rem; margin-bottom: 0.5rem; color: white">
+                Tatum 2 'Denim'
+              </p>
+              <button
+                type="button"
+                class="button"
+                style="background-color: white; color: black; font-weight: 500"
+              >
+                Shop
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./assests/benefit2.png"
+              alt=""
+              style="height: 100%; width: 100%"
+            />
+            <div style="position: absolute; bottom: 3rem; left: 3rem">
+              <p style="font-size: 1.2rem; margin-bottom: 0.5rem; color: white">
+                Jordan Basketball
+              </p>
+              <p style="font-size: 1.5rem; margin-bottom: 0.5rem; color: white">
+                Tatum 2 'Denim'
+              </p>
+              <button
+                type="button"
+                class="button"
+                style="background-color: white; color: black; font-weight: 500"
+              >
+                Shop
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./assests/benefit3.jpeg"
+              alt=""
+              style="height: 100%; width: 100%"
+            />
+            <div style="position: absolute; bottom: 3rem; left: 3rem">
+              <p style="font-size: 1.2rem; margin-bottom: 0.5rem; color: white">
+                Jordan Basketball
+              </p>
+              <p style="font-size: 1.5rem; margin-bottom: 0.5rem; color: white">
+                Tatum 2 'Denim'
+              </p>
+              <button
+                type="button"
+                class="button"
+                style="background-color: white; color: black; font-weight: 500"
+              >
+                Shop
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./assests/benefit4.png"
+              alt=""
+              style="height: 100%; width: 100%"
+            />
+            <div style="position: absolute; bottom: 3rem; left: 3rem">
+              <p style="font-size: 1.2rem; margin-bottom: 0.5rem; color: white">
+                Jordan Basketball
+              </p>
+              <p style="font-size: 1.5rem; margin-bottom: 0.5rem; color: white">
+                Tatum 2 'Denim'
+              </p>
+              <button
+                type="button"
+                class="button"
+                style="background-color: white; color: black; font-weight: 500"
+              >
+                Shop
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./assests/benefit5.jpeg"
+              alt=""
+              style="height: 100%; width: 100%"
+            />
+            <div style="position: absolute; bottom: 3rem; left: 3rem">
+              <p style="font-size: 1.2rem; margin-bottom: 0.5rem; color: white">
+                Jordan Basketball
+              </p>
+              <p style="font-size: 1.5rem; margin-bottom: 0.5rem; color: white">
+                Tatum 2 'Denim'
+              </p>
+              <button
+                type="button"
+                class="button"
+                style="background-color: white; color: black; font-weight: 500"
+              >
+                Shop
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./assests/benefit6.jpeg"
+              alt=""
+              style="height: 100%; width: 100%"
+            />
+            <div style="position: absolute; bottom: 3rem; left: 3rem">
+              <p style="font-size: 1.2rem; margin-bottom: 0.5rem; color: white">
+                Jordan Basketball
+              </p>
+              <p style="font-size: 1.5rem; margin-bottom: 0.5rem; color: white">
+                Tatum 2 'Denim'
+              </p>
+              <button
+                type="button"
+                class="button"
+                style="background-color: white; color: black; font-weight: 500"
+              >
+                Shop
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <footer class="footer" style="margin-block: 4rem">
+        <div class="footerContent">
+          <div>
+            <h3>Resources</h3>
+            <ul style="list-style: none; margin-top: 1rem">
+              <li class="footerLink">Find A Store</li>
+              <li class="footerLink">Become A Member</li>
+              <li class="footerLink">Send Us Feedback</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Help</h3>
+            <ul style="list-style: none; margin-top: 1rem">
+              <li class="footerLink">Get Help</li>
+              <li class="footerLink">Order Status</li>
+              <li class="footerLink">Delivery</li>
+              <li class="footerLink">Returns</li>
+              <li class="footerLink">Payment Options</li>
+              <li class="footerLink">Contact Us On Nike.com Inquiries</li>
+              <li class="footerLink">Contact Us On All Other Inquiries</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Company</h3>
+            <ul style="list-style: none; margin-top: 1rem">
+              <li class="footerLink">About Nike</li>
+              <li class="footerLink">News</li>
+              <li class="footerLink">Careers</li>
+              <li class="footerLink">Investors</li>
+              <li class="footerLink">Sustainability</li>
+            </ul>
+          </div>
+        </div>
+        <div style="margin-top: 2rem">
+          <p style="text-align: center">
+            &copy; Nike, Inc. All rights reserved
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
