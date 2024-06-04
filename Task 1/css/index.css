@@ -388,6 +388,8 @@
     .navLink {
         font-size: 1.1rem;
         font-weight: 400;
+        text-decoration: none;
+        color: black;
     }
 
     .hamburger {
@@ -509,3 +511,7 @@
     overflow: hidden !important;
     padding-bottom: 50px; /* make this a much larger value */
     }
+
+.navLink:hover {
+    border-bottom: 3px solid black;
+}
